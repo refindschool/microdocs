@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A simple doc page with vanillaJS and markdown</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  <section id="top">
+    <div id="menu"><a id="toggle" href="#">&#x2630;</a>
+      <ul>
+        <li><a href="/markdown/introduction">Introduction</a></li>
+        <li><a href="/markdown/titles">Titles</a></li>
+        <li><a href="/markdown/links">Links</a></li>
+        <li><a href="/markdown/images">Images</a></li>
+        <li><a href="/markdown/code">Code Blocks</a></li>
+        <li><a href="/markdown/tables">Tables</a></li>
+      </ul>
+    </div>
+    <div id="heading">
+      <div id="logo">microDocs</div>
+      <div id="tagline">Building a Single Page Webapp with Markdow and vanillaJS using <a target="_blank" href="http://jus.js.org/">&#x1F349; jus &#x1F349;</a></div>
+    </div>
+  </section>
+  <section>
+    <h1 id="title"></h1>
+    <div id="content">
+       <h1 id="code-blocks" class="deep-link"><a href="#code-blocks">Code Blocks</a></h1>
+<p>Pre-formatted code blocks are used for writing about programming or markup source code. Rather than forming normal paragraphs, the lines of a code block are interpreted literally.</p>
+<p>Here is an example:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>This&#xA0;is&#xA0;a&#xA0;code&#xA0;block</span></span></div></pre></code></pre>
+<p>To produce a code block in Markdown, simply indent every line of the block by at least 4 spaces or 1 tab.</p>
+<p>For example:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text plain null-grammar"><span>This&#xA0;is&#xA0;a&#xA0;normal&#xA0;paragraph:</span></span></div><div class="line"><span class="text plain null-grammar"><span>&#xA0;</span></span></div><div class="line"><span class="text plain null-grammar"><span>&#xA0;&#xA0;&#xA0;&#xA0;This&#xA0;is&#xA0;a&#xA0;code&#xA0;block.</span></span></div></pre></code></pre>
+<p>You can also create code block separated by:</p>
+<pre><code>```
+</code></pre>
+<h3 id="inline-code-blocks" class="deep-link"><a href="#inline-code-blocks">Inline code blocks</a></h3>
+<p>Inline code blocks can be written using: `</p>
+<p>For example:</p>
+<pre><code>This is a `inline code block`
+</code></pre>
+<h3 id="syntax-highlighting" class="deep-link"><a href="#syntax-highlighting">Syntax highlighting</a></h3>
+<p>You can define the language to be used for syntax highlighting by adding the name on the opening tag. Example:</p>
+<pre><code>```js
+var a = {};
+```
+</code></pre>
+
+      </div>
+  </section>
+  <script src="/app.js"></script>
+</body>
+
+</html>

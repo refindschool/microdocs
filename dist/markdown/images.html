@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A simple doc page with vanillaJS and markdown</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  <section id="top">
+    <div id="menu"><a id="toggle" href="#">&#x2630;</a>
+      <ul>
+        <li><a href="/markdown/introduction">Introduction</a></li>
+        <li><a href="/markdown/titles">Titles</a></li>
+        <li><a href="/markdown/links">Links</a></li>
+        <li><a href="/markdown/images">Images</a></li>
+        <li><a href="/markdown/code">Code Blocks</a></li>
+        <li><a href="/markdown/tables">Tables</a></li>
+      </ul>
+    </div>
+    <div id="heading">
+      <div id="logo">microDocs</div>
+      <div id="tagline">Building a Single Page Webapp with Markdow and vanillaJS using <a target="_blank" href="http://jus.js.org/">&#x1F349; jus &#x1F349;</a></div>
+    </div>
+  </section>
+  <section>
+    <h1 id="title"></h1>
+    <div id="content">
+       <h1 id="images" class="deep-link"><a href="#images">Images</a></h1>
+<p><img src="./cover_small.jpg" alt="learn markdown"></p>
+<pre><code class="highlight markdown"><pre class="editor editor-colors"><div class="line"><span class="source gfm"><span class="markup heading heading-1 gfm"><span>#&#xA0;</span><span>Inline</span></span></span></div><div class="line"><span class="source gfm"><span class="link"><span>!</span><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>Alternative&#xA0;text</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>(</span></span><span>/path/to/img.jpg&#xA0;&quot;Optional&#xA0;title&quot;</span><span class="punctuation definition end gfm"><span>)</span></span></span></span></span></div><div class="line"><span class="source gfm"><span>&#xA0;</span></span></div><div class="line"><span class="source gfm"><span class="markup heading heading-1 gfm"><span>#&#xA0;</span><span>Reference</span></span></span></div><div class="line"><span class="source gfm"><span class="link"><span>!</span><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>Alternative&#xA0;text</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>[</span></span><span>id</span><span class="punctuation definition end gfm"><span>]</span></span></span></span></span></div><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>id</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="punctuation separator key-value gfm"><span>:</span></span><span>&#xA0;</span><span class="markup underline link gfm"><span>url/to/image</span></span></span><span>&#xA0;&#xA0;&quot;Optional&#xA0;title&quot;</span></span></div></pre></code></pre>
+<p>As you may have noticed, images in  Markdown are very similar to links. The difference is that:</p>
+<ul>
+<li>the square brackets must be prefixed with an exclamation mark and</li>
+<li>inside they may have some alternative text. A description of the image, which is displayed if the image can&apos;t be loaded.</li>
+</ul>
+<hr>
+<p>Here&apos;s a quiz about markdown images.</p>
+<p>Select the valid images:
+-[ ] <code>[Google logo](https://www.google.ru/logo.png)</code>
+-[x] <code>![](https://www.google.ru/logo.png)</code></p>
+<blockquote>
+<p>Images must be prefixed with an exclamation mark.
+The alternative text and a title are optional.</p>
+</blockquote>
+<p>What is true about the following line: <code>![Funny cat](http://cats.ru/funny.png &quot;Share this&quot;)</code></p>
+<ul>
+<li>[x] if the url is 404, &quot;Funny cat&quot; will be displayed</li>
+<li>[ ] exclamation mark can be omitted in this case</li>
+<li>[ ] if the url is 404, &quot;Share this&quot; will be displayed</li>
+<li>[x] on mouse over the image &quot;Share this&quot; will be displayed</li>
+</ul>
+<blockquote>
+<p>Similarly to links, images can have 3 parts: the alternative text, the url and a title. An exclamation mark is nesessary.</p>
+</blockquote>
+<hr>
+
+      </div>
+  </section>
+  <script src="/app.js"></script>
+</body>
+
+</html>

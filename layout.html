@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>A simple doc page with vanillaJS and markdown</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  <section id="top">
+    <div id="menu"><a id="toggle" href="#">☰</a>
+      <ul>
+        <li><a href="/markdown/introduction">Introduction</a></li>
+        <li><a href="/markdown/titles">Titles</a></li>
+        <li><a href="/markdown/links">Links</a></li>
+        <li><a href="/markdown/images">Images</a></li>
+        <li><a href="/markdown/code">Code Blocks</a></li>
+        <li><a href="/markdown/tables">Tables</a></li>
+      </ul>
+    </div>
+    <div id="heading">
+      <div id="logo">microDocs</div>
+      <div id="tagline">Building a Single Page Webapp with Markdow and vanillaJS using <a target="_blank" href="http://jus.js.org/">🍉 jus 🍉</a></div>
+    </div>
+  </section>
+  <section>
+    <h1 id="title"></h1>
+    <div id="content">
+       {{{body}}}
+      </div>
+  </section>
+  <script src="/app.js"></script>
+</body>
+
+</html>
