@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A simple doc page with vanillaJS and markdown</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+</head>
+
+<body>
+  <section id="top">
+    <div id="menu"><a id="toggle" href="#">&#x2630;</a>
+      <ul>
+        <li><a href="/markdown/introduction">Introduction</a></li>
+        <li><a href="/markdown/titles">Titles</a></li>
+        <li><a href="/markdown/links">Links</a></li>
+        <li><a href="/markdown/images">Images</a></li>
+        <li><a href="/markdown/code">Code Blocks</a></li>
+        <li><a href="/markdown/tables">Tables</a></li>
+      </ul>
+    </div>
+    <div id="heading">
+      <div id="logo">microDocs</div>
+      <div id="tagline">Building a Single Page Webapp with Markdow and vanillaJS using <a target="_blank" href="http://jus.js.org/">&#x1F349; jus &#x1F349;</a></div>
+    </div>
+  </section>
+  <section>
+    <h1 id="title"></h1>
+    <div id="content">
+       <h1 id="links" class="deep-link"><a href="#links">Links</a></h1>
+<p>Markdown supports two styles of links: inline and reference.</p>
+<p>In both styles, the link text is delimited by [square brackets].</p>
+<p>To create an inline link, use a set of regular parentheses immediately after the link text&#x2019;s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:</p>
+<pre><code class="highlight markdown"><pre class="editor editor-colors"><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>I&apos;m&#xA0;an&#xA0;inline-style&#xA0;link</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>(</span></span><span>https://www.google.com</span><span class="punctuation definition end gfm"><span>)</span></span></span></span></span></div><div class="line"><span class="source gfm"><span>&#xA0;</span></span></div><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>I&apos;m&#xA0;an&#xA0;inline-style&#xA0;link&#xA0;with&#xA0;title</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>(</span></span><span>https://www.google.com&#xA0;&quot;Google&apos;s&#xA0;Homepage&quot;</span><span class="punctuation definition end gfm"><span>)</span></span></span></span></span></div><div class="line"><span class="source gfm"><span>&#xA0;</span></span></div><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>I&apos;m&#xA0;a&#xA0;reference-style&#xA0;link</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>[</span></span><span>Arbitrary&#xA0;case-insensitive&#xA0;reference&#xA0;text</span><span class="punctuation definition end gfm"><span>]</span></span></span></span></span></div><div class="line"><span class="source gfm"><span>&#xA0;</span></span></div><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>I&apos;m&#xA0;a&#xA0;relative&#xA0;reference&#xA0;to&#xA0;a&#xA0;repository&#xA0;file</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>(</span></span><span>../blob/master/LICENSE</span><span class="punctuation definition end gfm"><span>)</span></span></span></span></span></div></pre></code></pre>
+<p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
+<pre><code class="highlight markdown"><pre class="editor editor-colors"><div class="line"><span class="source gfm"><span>This&#xA0;is&#xA0;</span><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>an&#xA0;example</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="markup underline link gfm"><span class="punctuation definition begin gfm"><span>[</span></span><span>id</span><span class="punctuation definition end gfm"><span>]</span></span></span></span><span>&#xA0;reference-style&#xA0;link.</span></span></div></pre></code></pre>
+<p>You can optionally use a space to separate the sets of brackets:</p>
+<pre><code class="highlight markdown"><pre class="editor editor-colors"><div class="line"><span class="source gfm"><span>This&#xA0;is&#xA0;[an&#xA0;example]&#xA0;[id]&#xA0;reference-style&#xA0;link.</span></span></div></pre></code></pre>
+<p>Then, anywhere in the document, you define your link label like this, on a line by itself:</p>
+<pre><code class="highlight markdown"><pre class="editor editor-colors"><div class="line"><span class="source gfm"><span class="link"><span class="punctuation definition begin gfm"><span>[</span></span><span class="entity gfm"><span>id</span></span><span class="punctuation definition end gfm"><span>]</span></span><span class="punctuation separator key-value gfm"><span>:</span></span><span>&#xA0;</span><span class="markup underline link gfm"><span>http://example.com/</span></span></span><span>&#xA0;&#xA0;&quot;Optional&#xA0;Title&#xA0;Here&quot;</span></span></div></pre></code></pre>
+<p><strong>GitHub</strong> and <strong>GitBook</strong> supports URL autolinking. They will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.</p>
+<hr>
+<p>Here&apos;s a quiz about markdown links.</p>
+<p>Select the valid links:</p>
+<ul>
+<li>[x] <code>[a link](http://google.fr)</code></li>
+<li>[ ] <code>(a link)[http://google.fr]</code></li>
+</ul>
+<blockquote>
+<p>The link text is delimited by [square brackets].</p>
+</blockquote>
+<p>What are the correct informations from this link: <code>[a link](http://google.fr &quot;google&quot;)</code></p>
+<ul>
+<li>[ ] the link is <a href="https://google.fr">https://google.fr</a></li>
+<li>[x] the title of the link is &quot;google&quot;</li>
+<li>[ ] it&apos;ll show the text &quot;google&quot;</li>
+<li>[x] it&apos;ll show the text &quot;a link&quot;</li>
+</ul>
+<blockquote>
+<p>Links can have 3 parts: the text, the url and a title.</p>
+</blockquote>
+<hr>
+
+      </div>
+  </section>
+  <script src="/app.js"></script>
+</body>
+
+</html>
